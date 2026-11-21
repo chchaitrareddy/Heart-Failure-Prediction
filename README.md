@@ -1,6 +1,6 @@
 # Heart Failure Prediction Using Classification Analysis Algorithms
 
-the beginner-friendly Machine Learning web application built using **Python, Flask, Pandas, Scikit-learn, HTML, and CSS**. This application predicts 10-year risk of Coronary Heart Disease (CHD) based on clinical parameters from the Framingham Heart Study dataset.
+A beginner-friendly Machine Learning web application built using **Python, Flask, Pandas, Scikit-learn, HTML, and CSS**. This application predicts 10-year risk of Coronary Heart Disease (CHD) based on clinical parameters from the Framingham Heart Study dataset.
 
 ---
 
