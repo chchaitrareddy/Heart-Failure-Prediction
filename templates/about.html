@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Heart Failure Prediction Project</title>
+    <!-- Link to custom static CSS stylesheet -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <!-- Header Navigation Bar -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <h1 class="logo">❤️ HeartGuard AI</h1>
+            <nav>
+                <a href="{{ url_for('home') }}" class="nav-link">Home Assessment</a>
+                <a href="{{ url_for('about') }}" class="nav-link active">About Project</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="card about-card">
+            <h2>About The Project</h2>
+            <p><strong>Title:</strong> Heart Failure Prediction Using Classification Analysis Algorithms</p>
+            <p class="lead-text">This web application is built to predict whether an individual faces a risk of developing Coronary Heart Disease (CHD) over a 10-year period, based on key health metrics and clinical parameters.</p>
+
+            <hr class="divider">
+
+            <h3>📊 Dataset Overview</h3>
+            <p>The system utilizes the famous <strong>Framingham Heart Study Dataset</strong>, an ongoing cardiovascular cohort study conducted on residents of Framingham, Massachusetts. The target outcome variable is <code>TenYearCHD</code> (where 1 signifies High Risk of heart disease in 10 years and 0 signifies Low Risk).</p>
+
+            <h3>🌲 Machine Learning Algorithm</h3>
+            <p>We use the <strong>Random Forest Classifier</strong>, an ensemble learning method that constructs multiple decision trees during training and outputs the majority class vote across all individual trees. Random Forest is ideal for clinical datasets because of its resistance to overfitting and high predictive accuracy.</p>
+
+            <h3>💻 Technology Stack</h3>
+            <ul class="tech-list">
+                <li><strong>Python:</strong> Core programming language.</li>
+                <li><strong>Flask:</strong> Lightweight web application server framework.</li>
+                <li><strong>Pandas & NumPy:</strong> Data manipulation, missing value median imputation, and numerical array transformations.</li>
+                <li><strong>Scikit-Learn:</strong> Machine learning library supplying the <code>RandomForestClassifier</code> model.</li>
+                <li><strong>Python Pickle:</strong> Built-in object serialization for saving and loading binary model artifacts (<code>model.pkl</code>).</li>
+                <li><strong>HTML5 & CSS3:</strong> Pure vanilla user interface styling (no heavy frontend dependencies or JavaScript frameworks).</li>
+            </ul>
+
+            <div class="result-actions" style="margin-top: 30px;">
+                <a href="{{ url_for('home') }}" class="btn btn-primary">👈 Back to Risk Predictor</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Heart Failure Prediction Using Classification Analysis Algorithms | Academic ML Project</p>
+        </div>
+    </footer>
+
+</body>
+</html>
